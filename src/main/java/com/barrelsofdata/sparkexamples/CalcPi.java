@@ -1,11 +1,11 @@
 package com.barrelsofdata.sparkexamples;
 
-import java.util.ArrayList;
-import java.util.List;
-
 import org.apache.spark.api.java.JavaRDD;
 import org.apache.spark.api.java.JavaSparkContext;
 import org.apache.spark.sql.SparkSession;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public final class CalcPi {
 

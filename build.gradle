@@ -8,6 +8,8 @@ version "${projectVersion}"
 
 repositories {
     mavenCentral()
+    // for graphframes
+    maven { url "https://dl.bintray.com/spark-packages/maven/" }
 }
 
 dependencies {
@@ -15,7 +17,10 @@ dependencies {
 
     compileOnly group: "org.apache.spark", name: "spark-core_${scalaMajorVersion}", version: "${apacheSparkVersion}"
     compileOnly group: "org.apache.spark", name: "spark-sql_${scalaMajorVersion}", version: "${apacheSparkVersion}"
-    
+
+    compileOnly group: "org.elasticsearch", name: "elasticsearch-spark-20_${scalaMajorVersion}", version: "${esHadoopVersion}"
+    compileOnly group: "graphframes", name: "graphframes", version: "${graphframesVersion}"
+
     testImplementation group: "org.scalatest", name: "scalatest_${scalaMajorVersion}", version: "${scalaTestVersion}"
 }
 

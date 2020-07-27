@@ -1,7 +1,7 @@
 package com.barrelsofdata.sparkexamples
 
-import org.apache.spark.{SparkConf, SparkContext}
 import org.apache.spark.sql.{DataFrame, Dataset, SparkSession}
+import org.apache.spark.{SparkConf, SparkContext}
 
 // Create the case classes for our domain
 case class Department(id: String, name: String)
